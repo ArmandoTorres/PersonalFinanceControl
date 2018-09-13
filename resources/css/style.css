@@ -891,13 +891,13 @@ a:hover, a:focus {
     font-size: 16px;
     font-family: FontAwesome;
     height: auto;
-    content: "\f104";
+    content: "<";
     font-weight: 300;
     text-shadow: none;
     color: #757575;
 }
 #main-menu-wrapper li.open a .arrow.open:before {
-    content: "\f107";
+    content: ">";
 }
 #main-menu-wrapper li a .arrow {
     float: right;
@@ -3593,7 +3593,7 @@ blockquote.accent{ border-color: #E91E63; }
 
 .faq-panels .panel-heading [data-toggle="collapse"]:after {
     font-family: 'fontAwesome';
-    content: "\f107";
+    content: ">";
     /* "play" icon */
     
     float: right;
