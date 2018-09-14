@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<a href="#" onclick="loadHTML()">Click on it</a>
+	<a href="#" onclick="removeHTML()">Remove it</a>
+	<a href="#" onclick="replaceHTML()">Replace it</a>
+	<div id="container">
+		
+
+	</div>
+	<script type="text/javascript">
+		
+		function loadHTML() {
+			let container = document.getElementById('container')
+			container.innerHTML='<object type="text/html" data="home.html" > </object>';
+		}
+
+		function replaceHTML() {
+			let container = document.getElementById('container')
+			container.innerHTML='<object type="text/html" data="replace.html" > </object>';
+		}
+
+		function removeHTML() {
+			let container = document.getElementById('container')
+			container.innerHTML='';
+		}
+
+	</script>
+</body>
+</html>
