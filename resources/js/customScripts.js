@@ -13,14 +13,26 @@ function addMenuListeners() {
 				}
 			}
 			let parentElement = e.target.parentNode;
-			let mainContainer = document.getElementById('main-content')
 			if (parentElement.nodeName == 'LI') {
-				parentElement.classList.add('open')
-				mainContainer.innerHTML = `<object type="text/html" data='${parentElement.firstChild.nextSibling.getAttribute('load-page')}' > </object>`
+				parentElement.classList.add('open');
+				loadPageFragment(parentElement.firstChild.nextSibling.getAttribute('load-page'));
 			} else {
 				parentElement.parentNode.classList.add('open')
-				mainContainer.innerHTML = `<object type="text/html" data='${parentElement.getAttribute('load-page')}' > </object>`
+				loadPageFragment(parentElement.getAttribute('load-page'))
 			}
 		});
 	}
+}
+
+function loadPageFragment(page) {
+
+	let xhr = new XMLHttpRequest();
+	xhr.open('GET', page, true);
+	xhr.onreadystatechange= function() {
+	    if (this.readyState!==4) return;
+	    if (this.status!==200) return; // or whatever error handling you want
+	    document.getElementById('main-content').innerHTML= this.responseText;
+	};
+	xhr.send();
+
 }
