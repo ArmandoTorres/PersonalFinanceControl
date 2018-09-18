@@ -13,10 +13,13 @@ function addMenuListeners() {
 				}
 			}
 			let parentElement = e.target.parentNode;
+			let mainContainer = document.getElementById('main-content')
 			if (parentElement.nodeName == 'LI') {
-				parentElement.classList.add('open')	
+				parentElement.classList.add('open')
+				mainContainer.innerHTML = `<object type="text/html" data='${parentElement.firstChild.nextSibling.getAttribute('load-page')}' > </object>`
 			} else {
 				parentElement.parentNode.classList.add('open')
+				mainContainer.innerHTML = `<object type="text/html" data='${parentElement.getAttribute('load-page')}' > </object>`
 			}
 		});
 	}
