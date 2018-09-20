@@ -172,7 +172,7 @@
 					<div class="col-xs-12">
     					<section class="box ">
     						<header class="panel_header">
-				                <h2 class="title pull-left">New Account</h2>
+				                <h2 class="title pull-left">Accounts Summary</h2>
 				                <div class="actions panel_actions pull-right">
 				                	<a class="box_toggle fa fa-chevron-down"></a>
 				                </div>
@@ -180,17 +180,91 @@
 	    					<div class="content-body">
 		    					<div class="row">
 						            <div class="col-md-8 col-sm-9 col-xs-10">
+							      		<table border="1">
+							      			<tr>
+							      				<td colspan="2">
+							      					<img src="../resources/images/wallet.png" alt="Cash" style="max-width: 50px; max-height: 50px;">
+							      				</td>
+							      				<table>
+							      					<tr>
+									      				<td>
+									      					<b>Account Type: Cash</b>
+									      				</td>
+									      			</tr>
+									      			<tr>
+									      				<td>
+									      					<b>Account Name: Wallet</b>
+									      				</td>
+								      				</tr>
+								      				<tr>
+									      				<td>
+									      					<b>Last Entry: 20/09/2018</b>
+									      				</td>
+								      				</tr>
+								      				<tr>
+									      				<td>
+									      					<b>440,00 USD$</b>
+									      				</td>
+								      				</tr>
+							      				</table>
+							      			</tr>
+							      		</table>
+						            </div>
+						        </div>
+						    </div>
+						</section>
+					</div>
+					<div class="col-xs-12">
+    					<section class="box ">
+    						<header class="panel_header">
+				                <h2 class="title pull-left">New Account</h2>
+				                <div class="actions panel_actions pull-right">
+				                	<a class="box_toggle fa fa-chevron-down"></a>
+				                </div>
+				            </header>
+	    					<div class="content-body collapsed" style="display: none;">
+		    					<div class="row">
+						            <div class="col-md-8 col-sm-9 col-xs-10">
 						                <form role="form">
 						                    <div class="form-group">
-						                    	<i class="fas fa-money-bill-alt"></i>
                 								<label class="form-label" for="sltAccountType">Account Type</label>
-											    <select class="form-control form-control-lg" id="sltAccountType">
-											      <option value="1">Efectivo</option>
-											      <option value="2">Cuenta Bancaria</option>
-											      <option value="3">Tarjeta de Débito</option>
-											      <option value="4">Tarjeta de Crédito</option>
+											    <select class="form-control" id="sltAccountType">
+											      <option value="1">Cash</option>
+											      <option value="2">Bank account</option>
+											      <option value="3">Debit card</option>
+											      <option value="4">Credit card</option>
 											    </select>
 								            </div>
+								            <div class="form-group">
+                								<label class="form-label" for="txtAccountName">Account Name</label>
+											    <input class="form-control" id="txtAccountName" type="text"/>
+								            </div>
+								            <div class="form-group">
+                								<label class="form-label" for="sltAccountCurrency">Account Type</label>
+											    <select class="form-control" id="sltAccountCurrency">
+											      <option value="USD">Dollar - USD</option>
+											      <option value="DOP">Dominican Peso - DOP</option>
+											      <option value="EUR">Euro - EUR</option>
+											    </select>
+								            </div>
+								            <div class="form-group">
+                								<label class="form-label" for="txtAccountInitialBalance">Account Initial Balance</label>
+											    <input class="form-control" id="txtAccountInitialBalance" type="number"/>
+								            </div>
+								            <div class="form-group">
+                								<label class="form-label" for="txtAccountConcept">Account Concept</label>
+											    <textarea class="form-control" id="txtAccountConcept" row="3"></textarea> 
+								            </div>
+								            <div class="form-group">
+                								<label class="form-label" for="txtAccountPosition">Account Position</label>
+											    <input class="form-control" id="txtAccountPosition" type="number"/>
+								            </div>
+								            <div class="form-group form-check">
+											    <input class="form-check-input" id="chkAccountIncludeTotal" type="checkbox"/>
+                								<label class="form-check-label" for="chkAccountIncludeTotal">Include in total balance</label>
+								            </div>
+								            <button type="button" class="btn btn-lg btn-primary"><i class="fas fa-save"></i> Save</button>
+								            <button type="button" class="btn btn-lg btn-danger"><i class="fas fa-ban"></i> Cancel</button>
 						                </form>
 						            </div>
 						        </div>
