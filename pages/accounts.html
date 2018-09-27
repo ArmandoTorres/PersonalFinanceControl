@@ -174,7 +174,7 @@
     					<section class="box ">
     						<header class="panel_header">
 				                <h2 class="title pull-left"> 
-				                	<span class="fas fa-money-bill"></span>
+				                	<span class="fas fa-wallet"></span>
 				                	Wallet
 				                </h2>
 				                <div class="actions panel_actions pull-right">
@@ -184,11 +184,8 @@
 				                </div>
 				            </header>
 	    					<div class="content-body">
-		    					<div class="row">
-			      					<div class="col-sm-3">
-					            		<img src="../resources/images/wallet-account.png" alt="Cash" class="account-image">
-					            	</div>
-		    						<div class="col-sm">
+		    					<div class="row account-card">
+			      					<div class="col-sm-12">
 				      					<p><b>Type:</b> Cash</p>
 				      					<p><b>Name:</b> Wallet</p>
 				      					<p><b>Last Entry:</b> 20/09/2018</p>
@@ -202,7 +199,7 @@
     					<section class="box ">
     						<header class="panel_header">
 				                <h2 class="title pull-left"> 
-				                	<span class="fas fa-money-bill"></span>
+				                	<span class="fas fa-university"></span>
 				                	Bank Account
 				                </h2>
 				                <div class="actions panel_actions pull-right">
@@ -212,11 +209,8 @@
 				                </div>
 				            </header>
 	    					<div class="content-body">
-		    					<div class="row">
-			      					<div class="col-sm-3">
-					            		<img src="../resources/images/bank.png" alt="Bank" class="account-image">
-					            	</div>
-		    						<div class="col-sm">
+		    					<div class="row account-card">
+			      					<div class="col-sm-12">
 				      					<p><b>Bank:</b> BHD Leon</p>
 				      					<p><b>Name:</b> Cuenta de Nomina</p>
 				      					<p><b>Last Entry:</b> 18/09/2018</p>
@@ -230,7 +224,7 @@
     					<section class="box ">
     						<header class="panel_header">
 				                <h2 class="title pull-left"> 
-				                	<span class="fas fa-money-bill"></span>
+				                	<span class="fas fa-credit-card"></span>
 				                	Credit Card
 				                </h2>
 				                <div class="actions panel_actions pull-right">
@@ -240,20 +234,31 @@
 				                </div>
 				            </header>
 	    					<div class="content-body">
-		    					<div class="row">
-		    						<div class="col-sm-3">
-					            		<img src="../resources/images/credit-card-3.png" alt="Bank" class="account-image">
-					            	</div>
-		    						<div class="col-sm">
+		    					<div class="row account-card">
+		    						<div class="col-sm-12">
 				      					<p><b>Bank Name:</b> BHD Leon #9915 </p>
 				      					<p><b>Name:</b> Tarjeta de Credito</p>
 				      					<p><b>Last Entry:</b> 18/09/2018</p>
 				      					<p><b>Current Balance:</b> 1,800.65 USD$</p>
 				      					<p><b>Due Amount:</b> -150.00 USD$</p>
+				      					<div class="progress">
+							                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+							                    <span class="sr-only">80% Complete (danger)</span>
+							                </div>
+							            </div>
 			      					</div>
 						        </div>
 						    </div>
 						</section>
+					</div>
+					<div class="col-xs-12 col-md-6 col-lg-4">
+    					<div class="add-account-card">
+							<div rel="popover" data-animate=" animated fadeIn " data-container="body" data-toggle="popover" data-placement="top" data-content="Use this button for add new account." data-title="Add Account" data-trigger="hover" data-html="true" data-original-title="" title="">
+								<a data-toggle="modal" href="#cmpltadminModal-4">
+									<i class="fas fa-plus-circle fa-9x"></i>
+								</a>
+							</div>
+    					</div>
 					</div>
 					<div class="col-xs-12">
     					<section class="box ">
@@ -352,6 +357,27 @@
                </div>
            </div>
        </div>
+       <!-- modal end -->
+
+       <!-- Modal add new Account-->
+       <div class="modal fade col-xs-12" id="cmpltadminModal-4" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Modal Tittle</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        To close this modal, click on Close button...
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
        <!-- modal end -->
        
        <div class="jvectormap-tip"></div>
