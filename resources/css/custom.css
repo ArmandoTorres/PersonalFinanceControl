@@ -2,7 +2,15 @@
 	CUSTOM STYLE BY ATORRES
 */
 
-img.account-image {
-	max-width: 100px;
-	max-height: 100px;
+.account-card {
+	height: 170px;
+}
+
+.add-account-card {
+	background-color: #d9d9d9;
+	height: 311.12px;
+	text-align: center;
+	justify-content: center;
+    align-items: center;
+    display: flex;
 }
